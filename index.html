@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/039d33b3ac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="Header">
+    <nav class="sticky-top">
+      <div class="logo">NIKHIL<div class="point">.</div>
+      </div>
+      <ul id="sidemenu" class="nav">
+        <li><a href="#Header">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="Header-container">
+      <div class="right">
+        <div class="moon"></div>
+      </div>
+      <div class="text">
+        <p>Software Engineer | Web Developer</p>
+        <h1>Hi, I'm <span>Nikhil</span><br>Singh From India</h1>
+        <div class="social-icons top">
+          <a href="https://www.linkedin.com/in/nikhilsingh2903?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            class="cta-button" target="_blank">
+            <i class="fa-brands fa-linkedin"></i> </a>
+          <a href="https://github.com/Nikhilrsingh" class="cta-button" target="_blank">
+            <i class="fa-brands fa-github"></i> </a>
+          <a href="https://www.instagram.com/rrajput.nikhill/?igsh=bzFvamV1b29vaDQ3" class="cta-button" target="_blank">
+            <i class="fa-brands fa-instagram"></i> </a>
+          <a href="https://www.facebook.com/share/19Nxn9BFs5/?mibextid=LQQJ4d" class="cta-button" target="_blank">
+            <i class="fa-brands fa-facebook"></i> </a>
+          <a href="https://x.com/Nikhil_r_Singh?s=21" class="cta-button" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i> </a>
+        </div>
+        <div>
+          <a href="Pdf Files/Nikhil_Singh_Resume.pdf" download target="_blank" class="btn btn2">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="About">
+    <div class="about-container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="Images/for_about_img.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p class="intro">I’m currently a 3rd-year B.Tech student in Computer Science and Engineering at GH Raisoni
+            University,
+            Amravati, with a growing passion for software development. I’m actively building my skills in web
+            development—both frontend and backend—along with SQL and other essential tools and technologies through
+            dedicated online learning platforms.
+            <br>
+            My focus is on becoming a well-rounded software engineer, and I’m eager to apply my knowledge to real-world
+            projects, internships, and collaborative opportunities. I enjoy solving problems, learning new technologies,
+            and continuously improving my technical and professional skill set.
+            <br>
+            Let’s connect and grow together in the world of tech!
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Programming Languages</span><br>Python | HTML | CSS | JavaScript</li>
+              <li><span>Tools & Platforms</span><br>Git | GitHub | VS Code | MS Office</li>
+              <li><span>Core Concepts</span><br>Data Structures & Algorithms (DSA) |
+                Web Development</li>
+              <li><span>Professional Skills</span><br>Problem Solving | Team Collaboration | UI/UX Understanding</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Web Development Intern – Prodigy InfoTech (Aug 2025 – Present)</span><br> • Working on front-end
+                and full-stack projects including responsive web applications.<br>
+                • Completing tasks like portfolio design, interactive navigation menus, and web-based games.</li>
+              <li><span>Software Developer – Academic Projects (2023)</span><br> • Developed Smart City Management
+                System with real-time features and responsive design. <br>
+                • Collaborated in teams using Agile practices and Git version control.</li>
+              <!-- <li><span>Web Developer</span><br>Website development</li> -->
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>B.Tech in Computer Science</span><br>GH Raisoni College of Engineering, Amravati, Maharashtra
+              </li>
+              <li><span>H.S.C – Science Stream</span><br>Sandipani School, Nagpur</li>
+              <li><span>S.S.C</span><br>Sandipani School, Nagpur</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="services">
+    <div class="services-container">
+      <h1 class="sub-title ser">My services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Creating modern, responsive, and user-friendly websites that adapt perfectly to any device. Focused on
+            clean layouts, smooth navigation, and engaging visuals to provide the best user experience.</p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <i class="fas fa-crop-alt"></i>
+          <h2>ui/ux Design</h2>
+          <p>Designing intuitive interfaces and seamless user experiences. I ensure every interaction is simple,
+            efficient, and enjoyable while maintaining an attractive visual style.</p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <i class="fab fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>Building visually appealing and functional app interfaces tailored to your brand and audience. My designs
+            focus on performance, usability, and delivering value to users.</p>
+          <a href="#">learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="portfolio">
+    <div class="portfolio-container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="Images/work-1.png" alt="work-1.png">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>A responsive web application enabling users to connect, share posts, and interact in real-time. Designed
+              with a modern UI and smooth navigation for an engaging experience.</p>
+            <a href="https://nikhils-sem3project-raisoni.netlify.app/" target="_blank"><i
+                class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="Images/work-1.png" alt="work-2.png">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>A responsive web application enabling users to connect, share posts, and interact in real-time. Designed
+              with a modern UI and smooth navigation for an engaging experience.</p>
+            <a href="https://nikhils-sem3project-raisoni.netlify.app/" target="_blank"><i
+                class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="Images/work-1.png" alt="work-3.png">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>A responsive web application enabling users to connect, share posts, and interact in real-time. Designed
+              with a modern UI and smooth navigation for an engaging experience.</p>
+            <a href="https://nikhils-sem3project-raisoni.netlify.app/" target="_blank"><i
+                class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <div id="contact">
+    <div class="contact-container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><a href="tel:+918208331571"><i class="fas fa-solid fa-phone-square-alt"></i>+91 8208331571</a></p>
+          <p><a
+              href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://mail.google.com/mail/&ved=2ahUKEwjEkpfaop2KAxWjka8BHYjVC9IQFnoECA0QAQ&usg=AOvVaw1LdBdmrwYVrMn4NzKd8iI_"
+              class="cta-button" target="_blank"><i class="fa-solid fa-envelope"></i> nikhillsinghh1020@gmail.com</a>
+          </p>
+          <div class="social-icons bottom">
+            <h5><a
+                href="https://www.linkedin.com/in/nikhilsingh2903?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                class="cta-button" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> Linkedin</a></h5>
+            <a href="https://github.com/Nikhilrsingh" class="cta-button" target="_blank">
+              <i class="fa-brands fa-github"></i> Github</a>
+            <h5><a href="https://www.instagram.com/rrajput.nikhill/?igsh=bzFvamV1b29vaDQ3" class="cta-button"
+                target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram</a></h5>
+            <a href="https://www.facebook.com/share/19Nxn9BFs5/?mibextid=LQQJ4d" class="cta-button" target="_blank">
+              <i class="fa-brands fa-facebook"></i> Facebook</a>
+            <h5><a href="https://x.com/Nikhil_r_Singh?s=21" class="cta-button" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i> Twitter</a></h5>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn3">Submit</button>
+            <a href="https://wa.me/918208331571" class="btn btn3 wa" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <!-- <footer class="footer">
+      <p>Copyright &copy; Nikhil. 2025 -Made with HTML, CSS, JS</p>
+    </footer> -->
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
